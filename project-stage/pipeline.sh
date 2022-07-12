@@ -27,7 +27,7 @@ done
 
 cd ..
 
-#multiqc fastqc_reports -o fastqc_reports
+multiqc fastqc_reports -o fastqc_reports
 
 echo -e "\n Getting the reference genome..."
 mkdir -p ref
@@ -35,7 +35,7 @@ cd ref
 echo -e "Insert link to download reference genome of interest... (Copy and paste with shift+insert)"
 #inserting link to ref seq
 read refgenomelink
-downloading reference genome
+#downloading reference genome
 wget $refgenomelink
 ls
 gunzip *
